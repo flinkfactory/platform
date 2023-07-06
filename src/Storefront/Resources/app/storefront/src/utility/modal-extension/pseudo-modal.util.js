@@ -38,9 +38,7 @@ export default class PseudoModalUtil {
      * closes the modal
      */
     close() {
-        const modal = this.getModal();
-
-        this._modalInstance = bootstrap.Modal.getInstance(modal);
+        this._modalInstance.hide()
     }
 
     /**
